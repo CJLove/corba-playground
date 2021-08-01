@@ -1,0 +1,26 @@
+version: '3.2'
+
+services:
+    echo-server:
+        image: echo-ns-server:latest
+        networks:
+            - corba
+        depends_on:
+            - nameservice
+
+    echo-client:
+        image: echo-ns-client:latest
+        networks:
+            - corba
+        depends_on:
+            - nameservice
+        
+    nameservice:
+        image: omninames:latest
+        networks:
+            - corba
+
+networks:
+    corba:
+
+

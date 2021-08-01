@@ -19,3 +19,5 @@ target_link_libraries(echoClient PRIVATE ${omniORB4_LIBRARY} ${omnithread_LIBRAR
 target_include_directories(echoClient PRIVATE . ${GEN_DIR})
 target_compile_options(echoClient PRIVATE)
 
+install(TARGETS echoServer DESTINATION bin)
+install(TARGETS echoClient DESTINATION bin)

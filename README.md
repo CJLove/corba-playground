@@ -19,3 +19,10 @@ RUN_OMNIIDL(IDL_FILE OUTPUT_DIRECTORY INCLUDE_DIRECTORY OPTIONS OUTPUT_FILES)
 
 ### echo
 Simple echo client/server
+
+### echo-ns
+Simple echo client/server using naming service
+
+## Containerized CORBA
+
+The `Containers` folder has Dockerfiles and Docker Compose manifest for running a CORBA nameserver and simple echo client and server apps in containers

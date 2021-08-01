@@ -1,11 +1,15 @@
-#include <echo.h>
+#include "echo.h"
 
 #include <iostream>
 using namespace std;
 
 static void hello(Echo_ptr e)
 {
-  CORBA::String_var src = (const char*) "Hello!";
+  static uint32_t count = 0;
+
+  std::string helloMsg = "Hello " + std::to_string(count++);
+
+  CORBA::String_var src = (const char*) helloMsg.c_str();
 
   CORBA::String_var dest = e->echoString(src);
 

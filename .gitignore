@@ -4,6 +4,10 @@
 # Build directory
 build/*
 
+# Apps for inclusion in container images
+Containers/echoNsClient/echoNsClient
+Containers/echoNsServer/echoNsServer
+
 # Compiled Object files
 *.slo
 *.lo

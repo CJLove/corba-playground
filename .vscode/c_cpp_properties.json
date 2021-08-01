@@ -4,12 +4,20 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/build/echo/generated",
-                "${workspaceFolder}/echo"
+                "${workspaceFolder}/build/echo",
+                "${workspaceFolder}/build/echo-ns/generated"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/clang",
             "cStandard": "c11",
             "cppStandard": "c++11",
+            "browse": {
+                "path": [ "${workspaceFolder}/build/echo/generated",
+                "${workspaceFolder}/build/echo",
+                "${workspaceFolder}/build/echo-ns/generated" ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
             "configurationProvider": "vector-of-bool.cmake-tools"
         }
     ],
